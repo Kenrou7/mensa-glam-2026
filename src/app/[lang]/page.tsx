@@ -8,6 +8,10 @@ type PageProps = {
   params: Promise<{ lang: string }>;
 };
 
+export function generateStaticParams() {
+  return [{ lang: "es" }, { lang: "pt" }, { lang: "en" }];
+}
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { lang } = await params;
 
