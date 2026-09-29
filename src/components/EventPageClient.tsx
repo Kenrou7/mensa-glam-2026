@@ -1,12 +1,12 @@
 "use client";
 
 import { ActionButtons } from "@/components/ActionButtons";
+import { BasePathImage } from "@/components/BasePathImage";
 import { ButtonShowcase } from "@/components/ButtonShowcase";
 import { HotelsSection } from "@/components/HotelsSection";
 import { MensaMotifBackground } from "@/components/MensaMotifBackground";
 import { NavBar } from "@/components/NavBar";
 import { Locale, SiteContent, ThemeLook } from "@/types/site";
-import Image from "next/image";
 import { useState } from "react";
 
 interface EventPageClientProps {
@@ -53,7 +53,7 @@ export function EventPageClient({ locale, content }: EventPageClientProps) {
               </div>
             </div>
             <div className="hero-emblem mx-auto flex h-44 w-44 items-center justify-center rounded-full bg-[var(--chip-bg)] p-8 shadow-inner">
-              <Image src="/globe.svg" alt={content.nav.brand} width={120} height={120} priority />
+              <BasePathImage src="/globe.svg" alt={content.nav.brand} width={120} height={120} priority />
             </div>
           </div>
         </section>
@@ -109,7 +109,7 @@ export function EventPageClient({ locale, content }: EventPageClientProps) {
                 className="event-card speaker-card flex flex-col gap-3 rounded-2xl border border-[var(--panel-border)] bg-[var(--surface)] p-4"
               >
                 <div className="speaker-media flex h-24 items-center justify-center rounded-xl bg-[var(--panel-alt)]">
-                  <Image src={speaker.image} alt={speaker.name} width={48} height={48} />
+                  <BasePathImage src={speaker.image} alt={speaker.name} width={48} height={48} />
                 </div>
                 <h3 className="font-semibold text-[var(--text-main)]">{speaker.name}</h3>
                 <p className="text-sm text-[var(--text-soft)]">{speaker.description}</p>
@@ -170,7 +170,7 @@ export function EventPageClient({ locale, content }: EventPageClientProps) {
                 key={logo}
                 className="event-card logo-card flex h-28 items-center justify-center rounded-2xl border border-[var(--panel-border)] bg-[var(--surface)]"
               >
-                <Image src={logo} alt={content.thanks.logoAlt} width={96} height={30} />
+                <BasePathImage src={logo} alt={content.thanks.logoAlt} width={96} height={30} />
               </div>
             ))}
           </div>

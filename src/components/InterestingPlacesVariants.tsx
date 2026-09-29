@@ -1,7 +1,7 @@
 "use client";
 
+import { BasePathImage } from "@/components/BasePathImage";
 import { InterestingPlace, PlacesPageCopy, PlacesVariant } from "@/types/places";
-import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
 
@@ -87,7 +87,7 @@ function Postcards({ places, copy }: { places: InterestingPlace[]; copy: PlacesP
             index % 3 === 0 ? "sm:-rotate-1" : index % 3 === 1 ? "sm:rotate-1" : "sm:rotate-0"
           }`}
         >
-          <Image src={place.image} alt={place.title} width={900} height={510} className="h-44 w-full object-cover" />
+          <BasePathImage src={place.image} alt={place.title} width={900} height={510} className="h-44 w-full object-cover" />
           <div className="space-y-3 p-4">
             <h2 className="font-serif text-2xl text-stone-900">{place.title}</h2>
             <p className="text-sm leading-relaxed text-stone-700">{place.description}</p>
@@ -119,7 +119,7 @@ function ByNeighborhood({ places, copy }: { places: InterestingPlace[]; copy: Pl
           <div className="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {list.map((place) => (
               <article key={place.slug} className="overflow-hidden rounded-xl border border-stone-200 bg-stone-50">
-                <Image src={place.image} alt={place.title} width={700} height={420} className="h-36 w-full object-cover" />
+                <BasePathImage src={place.image} alt={place.title} width={700} height={420} className="h-36 w-full object-cover" />
                 <div className="space-y-2 p-3">
                   <h3 className="font-semibold text-stone-900">{place.title}</h3>
                   <p className="line-clamp-4 text-sm text-stone-700">{place.description}</p>
@@ -145,7 +145,7 @@ function Spotlight({ places, copy }: { places: InterestingPlace[]; copy: PlacesP
   return (
     <div className="grid gap-5 lg:grid-cols-[1.6fr_1fr]">
       <article className="overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm">
-        <Image src={featured.image} alt={featured.title} width={1280} height={720} className="h-72 w-full object-cover" />
+        <BasePathImage src={featured.image} alt={featured.title} width={1280} height={720} className="h-72 w-full object-cover" />
         <div className="space-y-3 p-5">
           <p className="text-xs font-semibold uppercase tracking-[0.16em] text-amber-700">{copy.featuredLabel}</p>
           <h2 className="font-serif text-3xl text-stone-900">{featured.title}</h2>
@@ -168,7 +168,7 @@ function Spotlight({ places, copy }: { places: InterestingPlace[]; copy: PlacesP
                     : "border-stone-200 bg-stone-50 hover:bg-stone-100"
                 }`}
               >
-                <Image src={place.image} alt={place.title} width={120} height={72} className="h-14 w-20 rounded-md object-cover" />
+                <BasePathImage src={place.image} alt={place.title} width={120} height={72} className="h-14 w-20 rounded-md object-cover" />
                 <span className="text-sm font-medium">{place.title}</span>
               </button>
             );
@@ -212,7 +212,7 @@ function Passport({ places, copy }: { places: InterestingPlace[]; copy: PlacesPa
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {visible.map((place) => (
           <article key={place.slug} className="rounded-2xl border border-stone-200 bg-white p-3 shadow-sm">
-            <Image src={place.image} alt={place.title} width={700} height={420} className="h-40 w-full rounded-xl object-cover" />
+            <BasePathImage src={place.image} alt={place.title} width={700} height={420} className="h-40 w-full rounded-xl object-cover" />
             <div className="mt-3 space-y-2">
               <span className={`inline-flex rounded-full px-2.5 py-1 text-xs font-semibold capitalize ${categoryTone[place.category]}`}>
                 {place.category}
@@ -235,7 +235,7 @@ function StoryRoute({ places, copy }: { places: InterestingPlace[]; copy: Places
         <article key={place.slug} className="relative grid gap-3 md:grid-cols-2 md:items-center">
           <span className="absolute left-2 top-6 h-4 w-4 rounded-full bg-amber-500 md:left-1/2 md:-translate-x-1/2" />
           <div className={index % 2 === 0 ? "md:pr-10" : "md:order-2 md:pl-10"}>
-            <Image src={place.image} alt={place.title} width={900} height={540} className="h-48 w-full rounded-2xl border border-stone-200 object-cover" />
+            <BasePathImage src={place.image} alt={place.title} width={900} height={540} className="h-48 w-full rounded-2xl border border-stone-200 object-cover" />
           </div>
           <div className={`rounded-2xl border border-stone-200 bg-white p-4 shadow-sm ${index % 2 === 0 ? "md:pl-10" : "md:order-1 md:pr-10"}`}>
             <h2 className="font-serif text-2xl text-stone-900">{place.title}</h2>
@@ -260,7 +260,7 @@ function CarouselDetail({ places, copy }: { places: InterestingPlace[]; copy: Pl
             href={`#${place.slug}`}
             className="min-w-64 snap-start overflow-hidden rounded-2xl border border-stone-200 bg-white shadow-sm transition hover:-translate-y-1"
           >
-            <Image src={place.image} alt={place.title} width={420} height={250} className="h-32 w-full object-cover" />
+            <BasePathImage src={place.image} alt={place.title} width={420} height={250} className="h-32 w-full object-cover" />
             <div className="p-3">
               <h2 className="font-semibold text-stone-900">{place.title}</h2>
               <p className="mt-1 line-clamp-2 text-sm text-stone-600">{place.description}</p>
@@ -271,7 +271,7 @@ function CarouselDetail({ places, copy }: { places: InterestingPlace[]; copy: Pl
       <div className="grid gap-4 md:grid-cols-2">
         {places.map((place) => (
           <article id={place.slug} key={place.slug} className="rounded-2xl border border-stone-200 bg-white p-4 shadow-sm scroll-mt-28">
-            <Image src={place.image} alt={place.title} width={800} height={480} className="h-44 w-full rounded-xl object-cover" />
+            <BasePathImage src={place.image} alt={place.title} width={800} height={480} className="h-44 w-full rounded-xl object-cover" />
             <h3 className="mt-3 font-serif text-2xl text-stone-900">{place.title}</h3>
             <p className="mt-2 text-sm text-stone-700">{place.description}</p>
             <div className="mt-3">

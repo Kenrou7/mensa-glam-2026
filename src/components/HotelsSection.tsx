@@ -1,7 +1,7 @@
 "use client";
 
+import { BasePathImage } from "@/components/BasePathImage";
 import { HotelItem, SiteContent } from "@/types/site";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import { toast } from "sonner";
 
@@ -135,7 +135,7 @@ export function HotelsSection({ content }: HotelsSectionProps) {
               className="event-card flex h-full flex-col rounded-2xl border border-[var(--panel-border)] bg-[var(--surface)] p-4"
             >
               <div className="relative h-36 overflow-hidden rounded-xl border border-[var(--panel-border)]">
-                <Image src={hotel.image} alt={hotel.name} fill className="object-cover" />
+                <BasePathImage src={hotel.image} alt={hotel.name} fill className="object-cover" />
               </div>
 
               <h3 className="mt-4 font-serif text-2xl text-[var(--text-main)]">{hotel.name}</h3>
