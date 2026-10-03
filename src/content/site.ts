@@ -76,17 +76,17 @@ export const siteContent: Record<Locale, SiteContent> = {
         {
           name: "Santiago Magnin",
           description: "Bio pendiente. Confirmado para la agenda del viernes.",
-          image: "/globe.svg",
+          image: "/speakers/Santiago.png",
         },
         {
           name: "Esteban Elías",
           description: "Bio pendiente. Confirmado para la agenda del viernes.",
-          image: "/globe.svg",
+          image: "/speakers/Esteban.jpg",
         },
         {
           name: "Gonzalo Burgos",
           description: "Bio pendiente. Confirmado para la agenda del viernes.",
-          image: "/globe.svg",
+          image: "/speakers/Gonzalo.jpg",
         },
         {
           name: "Marina Couto",

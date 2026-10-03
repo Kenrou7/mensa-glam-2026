@@ -836,6 +836,11 @@ body {
   border: 1.5px solid color-mix(in oklab, #1d4ed8 24%, transparent);
 }
 
+.speaker-media img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
 [data-look="studio"] .venue-map {
   border-radius: 0.2rem;
 }
