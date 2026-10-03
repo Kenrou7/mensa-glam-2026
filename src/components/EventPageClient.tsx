@@ -109,7 +109,7 @@ export function EventPageClient({ locale, content }: EventPageClientProps) {
                 className="event-card speaker-card flex flex-col gap-3 rounded-2xl border border-[var(--panel-border)] bg-[var(--surface)] p-4"
               >
                 <div className="speaker-media flex h-24 items-center justify-center rounded-xl bg-[var(--panel-alt)]">
-                  <img src={speaker.image} alt={speaker.name} />
+                  <BasePathImage src={speaker.image} alt={speaker.name} width={100} height={100} />
                 </div>
                 <h3 className="font-semibold text-[var(--text-main)]">{speaker.name}</h3>
                 <p className="text-sm text-[var(--text-soft)]">{speaker.description}</p>
