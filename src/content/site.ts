@@ -16,7 +16,6 @@ export const siteContent: Record<Locale, SiteContent> = {
       placesPreviewLabel: "Lugares BA",
       sections: [
         { id: "overview", label: "Inicio" },
-        { id: "button-lab", label: "Botones" },
         { id: "schedule", label: "Agenda" },
         { id: "speakers", label: "Disertantes" },
         { id: "venue", label: "Lugar" },
@@ -34,17 +33,6 @@ export const siteContent: Record<Locale, SiteContent> = {
       registration: "Formulario de inscripción",
       hotel: "Web del hotel",
       comingSoon: "Próximamente",
-    },
-    buttonShowcase: {
-      title: "Propuesta de estilos de botón",
-      subtitle: "Tres opciones iniciales para elegir la dirección visual del sitio.",
-      chooseLabel: "Elegí una estética para ver toda la página en ese estilo:",
-      styles: ["Estilo A", "Estilo B", "Estilo C"],
-      styleDescriptions: [
-        "Gala cálida: elegante y social.",
-        "Studio intelectual: limpia y analítica.",
-        "Vivid community: energética y cercana.",
-      ],
     },
     schedule: {
       title: "Agenda de charlas",
@@ -211,7 +199,6 @@ export const siteContent: Record<Locale, SiteContent> = {
       placesPreviewLabel: "Lugares BA",
       sections: [
         { id: "overview", label: "Início" },
-        { id: "button-lab", label: "Botões" },
         { id: "schedule", label: "Agenda" },
         { id: "speakers", label: "Palestrantes" },
         { id: "venue", label: "Local" },
@@ -229,17 +216,6 @@ export const siteContent: Record<Locale, SiteContent> = {
       registration: "Formulário de inscrição",
       hotel: "Site do hotel",
       comingSoon: "Em breve",
-    },
-    buttonShowcase: {
-      title: "Proposta de estilos de botão",
-      subtitle: "Três opções iniciais para escolher a direção visual do site.",
-      chooseLabel: "Escolha uma estética para visualizar toda a página nesse estilo:",
-      styles: ["Estilo A", "Estilo B", "Estilo C"],
-      styleDescriptions: [
-        "Gala quente: elegante e social.",
-        "Studio intelectual: limpa e analítica.",
-        "Vivid community: energética e acolhedora.",
-      ],
     },
     schedule: {
       title: "Agenda de palestras",
@@ -406,7 +382,6 @@ export const siteContent: Record<Locale, SiteContent> = {
       placesPreviewLabel: "BA Places",
       sections: [
         { id: "overview", label: "Home" },
-        { id: "button-lab", label: "Buttons" },
         { id: "schedule", label: "Schedule" },
         { id: "speakers", label: "Speakers" },
         { id: "venue", label: "Venue" },
@@ -424,17 +399,6 @@ export const siteContent: Record<Locale, SiteContent> = {
       registration: "Sign-up form",
       hotel: "Hotel website",
       comingSoon: "Coming soon",
-    },
-    buttonShowcase: {
-      title: "Button style proposals",
-      subtitle: "Three initial options so the client can choose the visual direction.",
-      chooseLabel: "Choose a visual mood to preview the full page style:",
-      styles: ["Style A", "Style B", "Style C"],
-      styleDescriptions: [
-        "Warm gala: elegant and social.",
-        "Intellectual studio: clean and analytical.",
-        "Vivid community: energetic and welcoming.",
-      ],
     },
     schedule: {
       title: "Talk schedule",

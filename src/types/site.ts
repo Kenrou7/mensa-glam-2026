@@ -70,13 +70,6 @@ export interface SiteContent {
     hotel: string;
     comingSoon: string;
   };
-  buttonShowcase: {
-    title: string;
-    subtitle: string;
-    chooseLabel: string;
-    styles: [string, string, string];
-    styleDescriptions: [string, string, string];
-  };
   schedule: {
     title: string;
     note: string;
