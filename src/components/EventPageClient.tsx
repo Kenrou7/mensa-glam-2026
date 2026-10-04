@@ -6,6 +6,7 @@ import { HotelsSection } from "@/components/HotelsSection";
 import { MensaMotifBackground } from "@/components/MensaMotifBackground";
 import { NavBar } from "@/components/NavBar";
 import { Locale, SiteContent } from "@/types/site";
+import Link from "next/link";
 
 interface EventPageClientProps {
   locale: Locale;
@@ -22,7 +23,6 @@ export function EventPageClient({ locale, content }: EventPageClientProps) {
         locale={locale}
         brand={content.nav.brand}
         languageLabel={content.nav.languageLabel}
-        placesPreviewLabel={content.nav.placesPreviewLabel}
         sections={content.nav.sections}
       />
 
@@ -153,6 +153,34 @@ export function EventPageClient({ locale, content }: EventPageClientProps) {
         </section>
 
         <HotelsSection content={content.hotels} />
+
+        <section
+          id="places-preview"
+          className="event-section section-places-preview scroll-mt-28 rounded-3xl border border-[var(--panel-border)] bg-[var(--panel-bg)] p-8 shadow-sm"
+        >
+          <h2 className="section-heading font-serif text-3xl text-[var(--text-main)]">{content.placesPreview.title}</h2>
+          <div className="mt-6 grid gap-6 md:grid-cols-2 md:items-center">
+            <div className="overflow-hidden rounded-2xl border border-[var(--panel-border)]">
+              <BasePathImage
+                src={content.placesPreview.image}
+                alt={content.placesPreview.imageAlt}
+                width={1500}
+                height={610}
+                className="aspect-[15/6] w-full object-cover"
+              />
+            </div>
+            <div>
+              <h3 className="font-serif text-2xl text-[var(--text-main)]">{content.placesPreview.placeName}</h3>
+              <p className="mt-3 leading-relaxed text-[var(--text-soft)]">{content.placesPreview.description}</p>
+              <Link
+                href={`/${locale}/places/passport`}
+                className="mt-5 inline-flex rounded-full bg-[var(--button-primary-bg)] px-5 py-2.5 font-semibold text-[var(--button-primary-text)] transition hover:-translate-y-0.5"
+              >
+                {content.placesPreview.moreLabel}
+              </Link>
+            </div>
+          </div>
+        </section>
 
         <section
           id="thanks"

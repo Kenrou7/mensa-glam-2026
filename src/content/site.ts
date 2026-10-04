@@ -13,13 +13,13 @@ export const siteContent: Record<Locale, SiteContent> = {
     nav: {
       brand: "Mensa Glam",
       languageLabel: "Idioma",
-      placesPreviewLabel: "Lugares BA",
       sections: [
         { id: "overview", label: "Inicio" },
         { id: "schedule", label: "Agenda" },
         { id: "speakers", label: "Disertantes" },
         { id: "venue", label: "Lugar" },
         { id: "hotels", label: "Hoteles" },
+        { id: "places-preview", label: "Lugares BA" },
         { id: "thanks", label: "Gracias" },
       ],
     },
@@ -93,6 +93,15 @@ export const siteContent: Record<Locale, SiteContent> = {
           pending: true,
         },
       ],
+    },
+    placesPreview: {
+      title: "Lugares BA",
+      placeName: "Ateneo Grand Splendid",
+      description:
+        "Una antigua sala de teatro convertida en una de las librerias mas emblematicas de Sudamerica, con palcos, ornamentacion original y escenario hoy transformado en cafeteria.",
+      image: "/interesting-places/ateneo_grand_splendid_1500x610.jpg",
+      imageAlt: "Interior del Ateneo Grand Splendid",
+      moreLabel: "Ver más lugares",
     },
     venue: {
       title: "Lugar del encuentro",
@@ -207,13 +216,13 @@ export const siteContent: Record<Locale, SiteContent> = {
     nav: {
       brand: "Mensa Glam",
       languageLabel: "Idioma",
-      placesPreviewLabel: "Lugares BA",
       sections: [
         { id: "overview", label: "Início" },
         { id: "schedule", label: "Agenda" },
         { id: "speakers", label: "Palestrantes" },
         { id: "venue", label: "Local" },
         { id: "hotels", label: "Hotéis" },
+        { id: "places-preview", label: "Lugares BA" },
         { id: "thanks", label: "Agradecimentos" },
       ],
     },
@@ -288,6 +297,15 @@ export const siteContent: Record<Locale, SiteContent> = {
           pending: true,
         },
       ],
+    },
+    placesPreview: {
+      title: "Lugares BA",
+      placeName: "Ateneo Grand Splendid",
+      description:
+        "Um antigo teatro transformado em uma das livrarias mais emblemáticas da América do Sul, com camarotes, ornamentação original e palco convertido em cafeteria.",
+      image: "/interesting-places/ateneo_grand_splendid_1500x610.jpg",
+      imageAlt: "Interior do Ateneo Grand Splendid",
+      moreLabel: "Ver mais",
     },
     venue: {
       title: "Local do encontro",
@@ -402,13 +420,13 @@ export const siteContent: Record<Locale, SiteContent> = {
     nav: {
       brand: "Mensa Glam",
       languageLabel: "Language",
-      placesPreviewLabel: "BA Places",
       sections: [
         { id: "overview", label: "Home" },
         { id: "schedule", label: "Schedule" },
         { id: "speakers", label: "Speakers" },
         { id: "venue", label: "Venue" },
         { id: "hotels", label: "Hotels" },
+        { id: "places-preview", label: "BA Places" },
         { id: "thanks", label: "Thanks" },
       ],
     },
@@ -483,6 +501,15 @@ export const siteContent: Record<Locale, SiteContent> = {
           pending: true,
         },
       ],
+    },
+    placesPreview: {
+      title: "BA Places",
+      placeName: "Ateneo Grand Splendid",
+      description:
+        "A former theater turned into one of South America's most iconic bookstores, with its original boxes and ornamentation and a stage now used as a café.",
+      image: "/interesting-places/ateneo_grand_splendid_1500x610.jpg",
+      imageAlt: "Interior of El Ateneo Grand Splendid",
+      moreLabel: "See more",
     },
     venue: {
       title: "Meeting venue",

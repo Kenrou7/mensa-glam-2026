@@ -8,7 +8,6 @@ interface NavBarProps {
   locale: Locale;
   brand: string;
   languageLabel: string;
-  placesPreviewLabel: string;
   sections: SectionLink[];
 }
 
@@ -20,7 +19,7 @@ const localeLabels: Record<Locale, string> = {
 
 const localeOrder: Locale[] = ["es", "pt", "en"];
 
-export function NavBar({ locale, brand, languageLabel, placesPreviewLabel, sections }: NavBarProps) {
+export function NavBar({ locale, brand, languageLabel, sections }: NavBarProps) {
   const [activeSection, setActiveSection] = useState(sections[0]?.id ?? "");
 
   const sectionIds = useMemo(() => sections.map((section) => section.id), [sections]);
@@ -84,12 +83,6 @@ export function NavBar({ locale, brand, languageLabel, placesPreviewLabel, secti
           })}
         </div>
         <div className="flex items-center gap-2">
-          <Link
-            href={`/${locale}/places/postcards`}
-            className="rounded-full border border-[var(--chip-border)] px-2.5 py-1 text-xs font-bold tracking-wide text-[var(--text-soft)] transition hover:bg-[var(--chip-bg)]"
-          >
-            {placesPreviewLabel}
-          </Link>
           <span className="hidden text-xs font-semibold uppercase text-[var(--text-soft)] sm:inline">
             {languageLabel}
           </span>

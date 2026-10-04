@@ -57,7 +57,6 @@ export interface SiteContent {
   nav: {
     brand: string;
     languageLabel: string;
-    placesPreviewLabel: string;
     sections: SectionLink[];
   };
   hero: {
@@ -80,6 +79,14 @@ export interface SiteContent {
     subtitle: string;
     pendingLabel: string;
     items: SpeakerItem[];
+  };
+  placesPreview: {
+    title: string;
+    placeName: string;
+    description: string;
+    image: string;
+    imageAlt: string;
+    moreLabel: string;
   };
   venue: {
     title: string;
