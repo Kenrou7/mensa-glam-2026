@@ -31,11 +31,11 @@ export function EventPageClient({ locale, content }: EventPageClientProps) {
           id="overview"
           className="event-section event-hero scroll-mt-28 rounded-3xl border border-[var(--panel-border)] bg-[var(--panel-bg)] p-8 shadow-sm"
         >
-          <p className="event-eyebrow text-sm font-semibold uppercase tracking-[0.2em] text-[var(--accent-strong)]">
-            {content.hero.eyebrow}
-          </p>
-          <div className="event-hero-grid mt-5 grid gap-6 lg:grid-cols-[1fr_230px] lg:items-center">
+          <div className="event-hero-grid grid items-center gap-6 lg:grid-cols-[1fr_267px]">
             <div>
+              <p className="event-eyebrow text-sm font-semibold uppercase tracking-[0.2em] text-[var(--accent-strong)]">
+                {content.hero.eyebrow}
+              </p>
               <h1 className="event-title font-serif text-5xl leading-tight text-[var(--text-main)]">
                 {content.hero.title}
               </h1>
@@ -50,8 +50,15 @@ export function EventPageClient({ locale, content }: EventPageClientProps) {
                 <ActionButtons registrationLabel={content.hero.registration} comingSoonLabel={content.hero.comingSoon} />
               </div>
             </div>
-            <div className="hero-emblem mx-auto flex h-44 w-44 items-center justify-center rounded-full bg-[var(--chip-bg)] p-8 shadow-inner">
-              <BasePathImage src="/globe.svg" alt={content.nav.brand} width={120} height={120} priority />
+            <div className="hero-emblem relative mx-auto h-[267px] w-full max-w-[267px] overflow-hidden">
+              <BasePathImage
+                src="/80years-logo.jpg"
+                alt={content.nav.brand}
+                width={400}
+                height={267}
+                priority
+                className="h-full w-full object-cover"
+              />
             </div>
           </div>
         </section>
