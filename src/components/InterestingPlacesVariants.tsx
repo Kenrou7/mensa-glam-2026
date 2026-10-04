@@ -10,26 +10,25 @@ interface InterestingPlacesVariantsProps {
   variant: PlacesVariant;
   copy: PlacesPageCopy;
   places: InterestingPlace[];
-  variants: PlacesVariant[];
 }
 
 const categoryTone: Record<InterestingPlace["category"], string> = {
-  cultura: "bg-amber-100 text-amber-900",
-  historia: "bg-stone-200 text-stone-900",
+  cultura: "bg-blue-100 text-blue-900",
+  historia: "bg-slate-200 text-slate-900",
   arquitectura: "bg-sky-100 text-sky-900",
-  naturaleza: "bg-emerald-100 text-emerald-900",
+  naturaleza: "bg-cyan-100 text-cyan-900",
   ciencia: "bg-cyan-100 text-cyan-900",
-  arte: "bg-rose-100 text-rose-900",
-  gastronomia: "bg-orange-100 text-orange-900",
+  arte: "bg-indigo-100 text-indigo-900",
+  gastronomia: "bg-sky-100 text-sky-900",
 };
 
-function Header({ localePrefix, copy, variants, current }: { localePrefix: string; copy: PlacesPageCopy; variants: PlacesVariant[]; current: PlacesVariant }) {
+function Header({ localePrefix, copy }: { localePrefix: string; copy: PlacesPageCopy }) {
   return (
     <header className="sticky top-0 z-30 border-b border-stone-200/80 bg-white/85 backdrop-blur">
       <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 py-4 lg:px-8">
         <div className="flex flex-wrap items-center justify-between gap-3">
           <div>
-            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-amber-700">Buenos Aires Guide</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-blue-700">Buenos Aires Guide</p>
             <h1 className="font-serif text-3xl text-stone-900">{copy.title}</h1>
             <p className="mt-1 text-sm text-stone-600">{copy.subtitle}</p>
           </div>
@@ -39,25 +38,6 @@ function Header({ localePrefix, copy, variants, current }: { localePrefix: strin
           >
             {copy.backLabel}
           </Link>
-        </div>
-        <div className="flex flex-wrap items-center gap-2">
-          <span className="pr-2 text-xs font-semibold uppercase tracking-[0.12em] text-stone-500">{copy.variantsLabel}</span>
-          {variants.map((option) => {
-            const isActive = option === current;
-            return (
-              <Link
-                key={option}
-                href={`${localePrefix}/places/${option}`}
-                className={`rounded-full border px-3 py-1.5 text-sm transition ${
-                  isActive
-                    ? "border-stone-900 bg-stone-900 text-stone-50"
-                    : "border-stone-300 bg-white text-stone-700 hover:bg-stone-100"
-                }`}
-              >
-                {copy.variantNames[option]}
-              </Link>
-            );
-          })}
         </div>
       </div>
     </header>
@@ -284,10 +264,10 @@ function CarouselDetail({ places, copy }: { places: InterestingPlace[]; copy: Pl
   );
 }
 
-export function InterestingPlacesVariants({ localePrefix, variant, copy, places, variants }: InterestingPlacesVariantsProps) {
+export function InterestingPlacesVariants({ localePrefix, variant, copy, places }: InterestingPlacesVariantsProps) {
   return (
-    <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,_#fff7ed_0%,_#fffbeb_40%,_#ffffff_80%)]">
-      <Header localePrefix={localePrefix} copy={copy} variants={variants} current={variant} />
+    <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,_#dbeafe_0%,_#eff6ff_40%,_#ffffff_80%)]">
+      <Header localePrefix={localePrefix} copy={copy} />
       <main className="mx-auto w-full max-w-6xl px-4 py-8 lg:px-8">
         {variant === "postcards" ? <Postcards places={places} copy={copy} /> : null}
         {variant === "neighborhoods" ? <ByNeighborhood places={places} copy={copy} /> : null}

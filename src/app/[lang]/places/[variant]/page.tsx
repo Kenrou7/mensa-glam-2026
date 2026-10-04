@@ -33,7 +33,6 @@ export default async function PlacesVariantPage({ params }: PlacesVariantPagePro
       variant={variant}
       copy={copy}
       places={buenosAiresPlaces}
-      variants={placesVariants}
     />
   );
 }

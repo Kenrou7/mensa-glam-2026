@@ -17,11 +17,9 @@ export interface PlacesPageCopy {
   subtitle: string;
   mapsLabel: string;
   backLabel: string;
-  variantsLabel: string;
   categoryAll: string;
   featuredLabel: string;
   neighborhoodsLabel: string;
-  variantNames: Record<PlacesVariant, string>;
 }
 
 export type PlacesCopyByLocale = Record<Locale, PlacesPageCopy>;
