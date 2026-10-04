@@ -81,6 +81,17 @@ export const siteContent: Record<Locale, SiteContent> = {
           description: "Vice presidente de IVNC (International Volunteer Network Committee). Miembro de Mensa desde 2015, Marina está en la Comisión de Mensa Brasil desde hace 10 años, apoyando su crecimiento exponencial.",
           image: "/globe.svg",
         },
+        {
+          name: "Irapoan Nogueira Filho Alford",
+          description: "PhD, Dr. y Mg. en Psicología Social, Psicólogo",
+          image: "/speakers/irapoan.jpeg",
+        },
+        {
+          name: "Próximo disertante",
+          description: "Información próximamente.",
+          image: "/globe.svg",
+          pending: true,
+        },
       ],
     },
     venue: {
@@ -264,6 +275,18 @@ export const siteContent: Record<Locale, SiteContent> = {
           description: "Vice-presidente do IVNC (International Volunteer Network Committee). Membro da Mensa desde 2015, Marina integra a diretoria da Mensa Brasil há 10 anos, apoiando o crescimento exponencial da organização nesse período.",
           image: "/globe.svg",
         },
+        {
+          name: "Próximo palestrante",
+          description: "Informações em breve.",
+          image: "/globe.svg",
+          pending: true,
+        },
+        {
+          name: "Próximo palestrante",
+          description: "Informações em breve.",
+          image: "/globe.svg",
+          pending: true,
+        },
       ],
     },
     venue: {
@@ -446,6 +469,18 @@ export const siteContent: Record<Locale, SiteContent> = {
           name: "Marina Couto",
           description: "Vice-chair of IVNC (International Volunteer Network Committee). Mensa member since 2015, Marina has been on the board of Mensa Brazil for the past 10 years, supporting the exponential growth in Mensa Brazil during that period.",
           image: "/globe.svg",
+        },
+        {
+          name: "Upcoming speaker",
+          description: "Details coming soon.",
+          image: "/globe.svg",
+          pending: true,
+        },
+        {
+          name: "Upcoming speaker",
+          description: "Details coming soon.",
+          image: "/globe.svg",
+          pending: true,
         },
       ],
     },

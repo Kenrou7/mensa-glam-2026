@@ -90,22 +90,30 @@ export function EventPageClient({ locale, content }: EventPageClientProps) {
         >
           <h2 className="section-heading font-serif text-3xl text-[var(--text-main)]">{content.speakers.title}</h2>
           <p className="mt-2 text-[var(--text-soft)]">{content.speakers.subtitle}</p>
-          <div className="speakers-grid mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {content.speakers.items.map((speaker) => (
+          <div className="speakers-grid mt-6 grid grid-cols-1 gap-4 lg:grid-cols-2">
+            {content.speakers.items.map((speaker, index) => (
               <article
-                key={speaker.name}
-                className="event-card speaker-card flex flex-col gap-3 rounded-2xl border border-[var(--panel-border)] bg-[var(--surface)] p-4"
+                key={`${speaker.name}-${index}`}
+                className="event-card speaker-card grid grid-cols-1 gap-4 rounded-2xl border border-[var(--panel-border)] bg-[var(--surface)] p-4 sm:grid-cols-[200px_minmax(0,1fr)] sm:items-start"
               >
-                <div className="speaker-media flex h-24 items-center justify-center rounded-xl bg-[var(--panel-alt)]">
-                  <BasePathImage src={speaker.image} alt={speaker.name} width={100} height={100} />
+                <div className="speaker-media flex aspect-square w-full max-w-[200px] items-center justify-center overflow-hidden rounded-xl bg-[var(--panel-alt)]">
+                  <BasePathImage
+                    src={speaker.image}
+                    alt={speaker.name}
+                    width={400}
+                    height={400}
+                    className="h-full w-full object-cover"
+                  />
                 </div>
-                <h3 className="font-semibold text-[var(--text-main)]">{speaker.name}</h3>
-                <p className="text-sm text-[var(--text-soft)]">{speaker.description}</p>
-                {speaker.pending ? (
-                  <span className="mt-auto inline-flex w-fit rounded-full bg-[var(--chip-active-bg)] px-2.5 py-1 text-xs font-semibold text-[var(--chip-active-text)]">
-                    {content.speakers.pendingLabel}
-                  </span>
-                ) : null}
+                <div className="flex min-w-0 flex-col gap-2">
+                  <h3 className="font-semibold text-[var(--text-main)]">{speaker.name}</h3>
+                  <p className="text-sm text-[var(--text-soft)]">{speaker.description}</p>
+                  {speaker.pending ? (
+                    <span className="inline-flex w-fit rounded-full bg-[var(--chip-active-bg)] px-2.5 py-1 text-xs font-semibold text-[var(--chip-active-text)]">
+                      {content.speakers.pendingLabel}
+                    </span>
+                  ) : null}
+                </div>
               </article>
             ))}
           </div>

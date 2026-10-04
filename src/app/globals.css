@@ -944,11 +944,11 @@ body {
 }
 
 [data-look="vivid"] .speakers-grid .speaker-card:nth-child(2n) {
-  transform: translateY(8px);
+  transform: none;
 }
 
 [data-look="vivid"] .speakers-grid .speaker-card:nth-child(3n) {
-  transform: translateY(-6px);
+  transform: none;
 }
 
 [data-look="vivid"] .nav-progress {
@@ -975,8 +975,7 @@ body {
   transform: none;
 }
 
-[data-look="vivid"] .look-option:hover,
-[data-look="vivid"] .speaker-card:hover {
+[data-look="vivid"] .look-option:hover {
   transform: translateY(-3px);
 }
 
@@ -997,7 +996,6 @@ body {
   [data-look="vivid"] .speakers-grid .speaker-card:nth-child(3n),
   [data-look="vivid"] .look-option[aria-pressed="true"],
   [data-look="vivid"] .look-option:hover,
-  [data-look="vivid"] .speaker-card:hover,
   [data-look="vivid"] .hero-emblem,
   [data-look="vivid"] .button-lab-section {
     transform: none;
@@ -1086,7 +1084,7 @@ body {
   }
 
   [data-look="vivid"] .section-speakers .speakers-grid {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   [data-look="vivid"] .section-venue > div {
