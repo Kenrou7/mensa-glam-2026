@@ -225,6 +225,15 @@ export function EventPageClient({ locale, content }: EventPageClientProps) {
             ))}
           </div>
         </section>
+        <div className="relative -mb-14 -mt-8 aspect-[1.85/1] w-full overflow-hidden md:-mt-16">
+          <BasePathImage
+            src="/logo_glam.png"
+            alt={content.hero.title}
+            width={1268}
+            height={1241}
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+        </div>
       </main>
     </div>
   );
