@@ -6,12 +6,12 @@ export const siteContent: Record<Locale, SiteContent> = {
   es: {
     localeName: "Español",
     meta: {
-      title: "Mensa Glam 2026 | Buenos Aires",
+      title: "Mensa GLAM 2026 | Buenos Aires",
       description:
         "Encuentro social de Mensa LATAM en Buenos Aires del 27 al 29 de noviembre de 2026.",
     },
     nav: {
-      brand: "Mensa Glam",
+      brand: "Mensa GLAM",
       languageLabel: "Idioma",
       sections: [
         { id: "overview", label: "Inicio" },
@@ -25,7 +25,7 @@ export const siteContent: Record<Locale, SiteContent> = {
     },
     hero: {
       eyebrow: "Evento regional de Mensa LATAM",
-      title: "Mensa Glam 2026",
+      title: "Mensa GLAM 2026",
       subtitle:
         "Un encuentro social para compartir ideas, juegos, amistades y conversaciones memorables.",
       date: "27 al 29 de noviembre de 2026",
@@ -142,7 +142,7 @@ export const siteContent: Record<Locale, SiteContent> = {
       ratesLabel: "Valores con descuento",
       referenceNeededTitle: "Código de referencia requerido",
       referenceNeededDescription:
-        "Este hotel aplica la tarifa de Mensa Glam solo con código. Te redirigimos en {seconds} {unit} en una nueva pestaña.",
+        "Este hotel aplica la tarifa de Mensa GLAM solo con código. Te redirigimos en {seconds} {unit} en una nueva pestaña.",
       referenceCodeLabel: "Referencia",
       autoRedirectLabel: "Redirección automática",
       secondsLabel: "segundos",
@@ -209,12 +209,12 @@ export const siteContent: Record<Locale, SiteContent> = {
   pt: {
     localeName: "Português",
     meta: {
-      title: "Mensa Glam 2026 | Buenos Aires",
+      title: "Mensa GLAM 2026 | Buenos Aires",
       description:
         "Encontro social da Mensa LATAM em Buenos Aires de 27 a 29 de novembro de 2026.",
     },
     nav: {
-      brand: "Mensa Glam",
+      brand: "Mensa GLAM",
       languageLabel: "Idioma",
       sections: [
         { id: "overview", label: "Início" },
@@ -228,7 +228,7 @@ export const siteContent: Record<Locale, SiteContent> = {
     },
     hero: {
       eyebrow: "Evento regional da Mensa LATAM",
-      title: "Mensa Glam 2026",
+      title: "Mensa GLAM 2026",
       subtitle:
         "Um encontro social para compartilhar ideias, jogos, amizades e conversas memoráveis.",
       date: "27 a 29 de novembro de 2026",
@@ -346,7 +346,7 @@ export const siteContent: Record<Locale, SiteContent> = {
       ratesLabel: "Tarifas com desconto",
       referenceNeededTitle: "Código de referência obrigatório",
       referenceNeededDescription:
-        "Este hotel aplica a tarifa Mensa Glam somente com código. Vamos redirecionar em {seconds} {unit} em uma nova aba.",
+        "Este hotel aplica a tarifa Mensa GLAM somente com código. Vamos redirecionar em {seconds} {unit} em uma nova aba.",
       referenceCodeLabel: "Referência",
       autoRedirectLabel: "Redirecionamento automático",
       secondsLabel: "segundos",
@@ -413,12 +413,12 @@ export const siteContent: Record<Locale, SiteContent> = {
   en: {
     localeName: "English",
     meta: {
-      title: "Mensa Glam 2026 | Buenos Aires",
+      title: "Mensa GLAM 2026 | Buenos Aires",
       description:
         "Mensa LATAM social gathering in Buenos Aires, November 27-29, 2026.",
     },
     nav: {
-      brand: "Mensa Glam",
+      brand: "Mensa GLAM",
       languageLabel: "Language",
       sections: [
         { id: "overview", label: "Home" },
@@ -432,7 +432,7 @@ export const siteContent: Record<Locale, SiteContent> = {
     },
     hero: {
       eyebrow: "Mensa LATAM regional event",
-      title: "Mensa Glam 2026",
+      title: "Mensa GLAM 2026",
       subtitle:
         "A social gathering to share ideas, games, friendships, and memorable conversations.",
       date: "November 27-29, 2026",
@@ -550,7 +550,7 @@ export const siteContent: Record<Locale, SiteContent> = {
       ratesLabel: "Discounted rates",
       referenceNeededTitle: "Reference code required",
       referenceNeededDescription:
-        "This hotel applies the Mensa Glam rate only with a code. We will redirect you in {seconds} {unit} in a new tab.",
+        "This hotel applies the Mensa GLAM rate only with a code. We will redirect you in {seconds} {unit} in a new tab.",
       referenceCodeLabel: "Reference",
       autoRedirectLabel: "Automatic redirect",
       secondsLabel: "seconds",
