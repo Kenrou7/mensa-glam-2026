@@ -17,8 +17,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!isLocale(lang)) {
     return {
-      title: "Mensa Glam",
-      description: "Mensa Glam event website",
+      title: "Mensa GLAM",
+      description: "Mensa GLAM event website",
     };
   }
 
