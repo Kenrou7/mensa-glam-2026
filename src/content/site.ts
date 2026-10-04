@@ -35,8 +35,35 @@ export const siteContent: Record<Locale, SiteContent> = {
       comingSoon: "Próximamente",
     },
     schedule: {
-      title: "Agenda de charlas",
+      title: "Charlas",
       note: "Programa preliminar. Algunos horarios o disertantes pueden cambiar.",
+      agendaTitle: "Agenda",
+      agendaDays: [
+        {
+          day: "Viernes 27 de Noviembre",
+          activities: [
+            { period: "Mañana", description: "Ciclo de apertura e intercambios institucionales con nuestras Mensa Talks." },
+            { period: "Mediodía", description: "Receso libre para almuerzo." },
+            { period: "Tarde", description: "Recorrido turístico y actividades de integración y juegos grupales (combinando propuestas organizadas y opciones de autogestión)." },
+            { period: "Noche", description: "Salida libre y de autogestión para los grupos que se vayan conformando." },
+          ],
+        },
+        {
+          day: "Sábado 28 de Noviembre",
+          activities: [
+            { period: "Mañana", description: "Segunda jornada de Mensa Talks y paneles de debate." },
+            { period: "Mediodía", description: "Receso libre para almuerzo." },
+            { period: "Tarde", description: "Actividades recreativas, paseos." },
+            { period: "Noche", description: "Espacio libre de autogestión y dinamización grupal." },
+          ],
+        },
+        {
+          day: "Domingo 29 de Noviembre",
+          activities: [
+            { period: "Mediodía / Tarde", description: "Gran almuerzo de despedida y cierre oficial de la GLAM 2026." },
+          ],
+        },
+      ],
       days: [
         {
           day: "Viernes",
@@ -49,9 +76,9 @@ export const siteContent: Record<Locale, SiteContent> = {
         {
           day: "Sábado",
           sessions: [
-            { time: "09:00", speaker: "Mensa Paraguay" },
-            { time: "10:15", speaker: "Mathesis" },
-            { time: "11:30", speaker: "Julio Cesar Filho" },
+            { time: "09:00", speaker: "Julio Cesar Filho" },
+            { time: "10:15", speaker: "Alejandra ??" },
+            { time: "11:30", speaker: "Marina Couto" },
           ],
         },
       ],
@@ -238,8 +265,35 @@ export const siteContent: Record<Locale, SiteContent> = {
       comingSoon: "Em breve",
     },
     schedule: {
-      title: "Agenda de palestras",
+      title: "Palestras",
       note: "Programa preliminar. Alguns horários ou palestrantes podem mudar.",
+      agendaTitle: "Agenda",
+      agendaDays: [
+        {
+          day: "Sexta-feira, 27 de novembro",
+          activities: [
+            { period: "Manhã", description: "Abertura e intercâmbios institucionais com nossas Mensa Talks." },
+            { period: "Meio-dia", description: "Intervalo livre para o almoço." },
+            { period: "Tarde", description: "Passeio turístico, atividades de integração e jogos em grupo, combinando propostas organizadas e opções autogeridas." },
+            { period: "Noite", description: "Saída livre e autogerida para os grupos que forem se formando." },
+          ],
+        },
+        {
+          day: "Sábado, 28 de novembro",
+          activities: [
+            { period: "Manhã", description: "Segundo dia de Mensa Talks e painéis de debate." },
+            { period: "Meio-dia", description: "Intervalo livre para o almoço." },
+            { period: "Tarde", description: "Atividades recreativas e passeios." },
+            { period: "Noite", description: "Tempo livre para atividades autogeridas e integração em grupo." },
+          ],
+        },
+        {
+          day: "Domingo, 29 de novembro",
+          activities: [
+            { period: "Meio-dia / Tarde", description: "Grande almoço de despedida e encerramento oficial da GLAM 2026." },
+          ],
+        },
+      ],
       days: [
         {
           day: "Sexta-feira",
@@ -252,9 +306,9 @@ export const siteContent: Record<Locale, SiteContent> = {
         {
           day: "Sábado",
           sessions: [
-            { time: "09:00", speaker: "Mensa Paraguai" },
-            { time: "10:15", speaker: "Mathesis" },
-            { time: "11:30", speaker: "Julio Cesar Filho" },
+            { time: "09:00", speaker: "Julio Cesar Filho" },
+            { time: "10:15", speaker: "Alejandra ??" },
+            { time: "11:30", speaker: "Marina Couto" },
           ],
         },
       ],
@@ -442,8 +496,35 @@ export const siteContent: Record<Locale, SiteContent> = {
       comingSoon: "Coming soon",
     },
     schedule: {
-      title: "Talk schedule",
+      title: "Talks",
       note: "Preliminary program. Some times or speakers may change.",
+      agendaTitle: "Schedule",
+      agendaDays: [
+        {
+          day: "Friday, November 27",
+          activities: [
+            { period: "Morning", description: "Opening program and institutional exchanges with our Mensa Talks." },
+            { period: "Midday", description: "Free time for lunch." },
+            { period: "Afternoon", description: "City tour, social activities, and group games, combining organized plans with self-guided options." },
+            { period: "Evening", description: "Free, self-organized outings for the groups that form." },
+          ],
+        },
+        {
+          day: "Saturday, November 28",
+          activities: [
+            { period: "Morning", description: "Second day of Mensa Talks and debate panels." },
+            { period: "Midday", description: "Free time for lunch." },
+            { period: "Afternoon", description: "Recreational activities and outings." },
+            { period: "Evening", description: "Free time for self-organized activities and group socializing." },
+          ],
+        },
+        {
+          day: "Sunday, November 29",
+          activities: [
+            { period: "Midday / Afternoon", description: "Farewell lunch and official closing of GLAM 2026." },
+          ],
+        },
+      ],
       days: [
         {
           day: "Friday",
@@ -456,9 +537,9 @@ export const siteContent: Record<Locale, SiteContent> = {
         {
           day: "Saturday",
           sessions: [
-            { time: "09:00", speaker: "Mensa Paraguay" },
-            { time: "10:15", speaker: "Mathesis" },
-            { time: "11:30", speaker: "Julio Cesar Filho" },
+            { time: "09:00", speaker: "Julio Cesar Filho" },
+            { time: "10:15", speaker: "Alejandra ??" },
+            { time: "11:30", speaker: "Marina Couto" },
           ],
         },
       ],

@@ -73,6 +73,14 @@ export interface SiteContent {
     title: string;
     note: string;
     days: DaySchedule[];
+    agendaTitle: string;
+    agendaDays: Array<{
+      day: string;
+      activities: Array<{
+        period: string;
+        description: string;
+      }>;
+    }>;
   };
   speakers: {
     title: string;

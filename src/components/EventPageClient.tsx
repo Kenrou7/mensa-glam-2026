@@ -67,7 +67,26 @@ export function EventPageClient({ locale, content }: EventPageClientProps) {
           id="schedule"
           className="event-section section-schedule scroll-mt-28 rounded-3xl border border-[var(--panel-border)] bg-[var(--panel-bg)] p-8 shadow-sm"
         >
-          <h2 className="section-heading font-serif text-3xl text-[var(--text-main)]">{content.schedule.title}</h2>
+          <h2 className="section-heading font-serif text-3xl text-[var(--text-main)]">{content.schedule.agendaTitle}</h2>
+          <div className="schedule-grid mt-6 grid gap-4 lg:grid-cols-3">
+            {content.schedule.agendaDays.map((day) => (
+              <article
+                key={day.day}
+                className="event-card schedule-card rounded-2xl border border-[var(--panel-border)] bg-[var(--panel-alt)] p-5"
+              >
+                <h3 className="font-serif text-xl text-[var(--text-main)]">{day.day}</h3>
+                <ul className="mt-4 space-y-3 text-sm text-[var(--text-soft)]">
+                  {day.activities.map((activity) => (
+                    <li key={`${day.day}-${activity.period}`}>
+                      <span className="font-semibold text-[var(--accent-strong)]">{activity.period}:</span>{" "}
+                      {activity.description}
+                    </li>
+                  ))}
+                </ul>
+              </article>
+            ))}
+          </div>
+          <h2 className="section-heading mt-10 font-serif text-3xl text-[var(--text-main)]">{content.schedule.title}</h2>
           <p className="mt-2 text-[var(--text-soft)]">{content.schedule.note}</p>
           <div className="schedule-grid mt-6 grid gap-4 md:grid-cols-2">
             {content.schedule.days.map((day) => (
