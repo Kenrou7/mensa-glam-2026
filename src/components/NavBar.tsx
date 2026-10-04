@@ -1,5 +1,6 @@
 "use client";
 
+import { BasePathImage } from "@/components/BasePathImage";
 import { Locale, SectionLink } from "@/types/site";
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
@@ -60,7 +61,8 @@ export function NavBar({ locale, brand, languageLabel, sections }: NavBarProps) 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-[var(--nav-border)] bg-[var(--nav-bg)] backdrop-blur">
       <nav className="mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 py-3 lg:px-8">
-        <a href="#overview" className="font-serif text-xl tracking-wide text-[var(--text-main)]">
+        <a href="#overview" className="flex items-center gap-2.5 font-serif text-xl tracking-wide text-[var(--text-main)]">
+          <BasePathImage src="/Mensa_logo.webp" alt="" width={32} height={32} className="h-8 w-8 object-contain" />
           {brand}
         </a>
         <div className="hidden items-center gap-2 md:flex">
