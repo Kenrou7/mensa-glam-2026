@@ -176,7 +176,7 @@ export const buenosAiresPlaces: InterestingPlace[] = [
 export const placesCopy: PlacesCopyByLocale = {
   es: {
     title: "Lugares para visitar en Buenos Aires",
-    subtitle: "16 propuestas para disfrutar la ciudad durante Mensa Glam.",
+    subtitle: "16 propuestas para disfrutar la ciudad durante Mensa GLAM.",
     mapsLabel: "Ver en Maps",
     backLabel: "Volver al evento",
     categoryAll: "Todos",
@@ -185,7 +185,7 @@ export const placesCopy: PlacesCopyByLocale = {
   },
   pt: {
     title: "Lugares para visitar em Buenos Aires",
-    subtitle: "16 sugestoes para curtir a cidade durante o Mensa Glam.",
+    subtitle: "16 sugestoes para curtir a cidade durante o Mensa GLAM.",
     mapsLabel: "Ver no Maps",
     backLabel: "Voltar ao evento",
     categoryAll: "Todos",
@@ -194,7 +194,7 @@ export const placesCopy: PlacesCopyByLocale = {
   },
   en: {
     title: "Places to visit in Buenos Aires",
-    subtitle: "16 ideas to enjoy the city during Mensa Glam.",
+    subtitle: "16 ideas to enjoy the city during Mensa GLAM.",
     mapsLabel: "Open in Maps",
     backLabel: "Back to event",
     categoryAll: "All",
