@@ -440,9 +440,15 @@ body {
 .hero-emblem {
   position: relative;
   overflow: hidden;
-  box-shadow:
-    inset 0 0 0 1px color-mix(in oklab, var(--panel-border) 40%, transparent),
-    var(--card-shadow);
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.hero-emblem::before,
+.hero-emblem::after {
+  content: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
 }
 
 .venue-map {
@@ -916,10 +922,6 @@ body {
 
 [data-look="vivid"] .look-glyph-vivid {
   transform: scale(1.05);
-}
-
-[data-look="vivid"] .hero-emblem {
-  border: 1.5px dashed var(--panel-border);
 }
 
 [data-look="vivid"] .motif {

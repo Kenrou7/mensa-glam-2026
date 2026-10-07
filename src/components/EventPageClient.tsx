@@ -50,9 +50,9 @@ export function EventPageClient({ locale, content }: EventPageClientProps) {
                 <ActionButtons registrationLabel={content.hero.registration} comingSoonLabel={content.hero.comingSoon} />
               </div>
             </div>
-            <div className="hero-emblem relative mx-auto h-[267px] w-full max-w-[267px] overflow-hidden">
+            <div className="hero-emblem relative mx-auto h-[267px] w-full max-w-[267px] overflow-hidden lg:relative lg:left-[-80px]">
               <BasePathImage
-                src="/80years-logo.jpg"
+                src="/logo_glam.png"
                 alt={content.nav.brand}
                 width={400}
                 height={267}
@@ -225,13 +225,13 @@ export function EventPageClient({ locale, content }: EventPageClientProps) {
             ))}
           </div>
         </section>
-        <div className="relative -mb-14 -mt-8 aspect-[1.85/1] w-full overflow-hidden md:-mt-16">
+        <div className="relative flex w-full justify-center py-8">
           <BasePathImage
-            src="/logo_glam.png"
+            src="/80years-logo.png"
             alt={content.hero.title}
-            width={1268}
-            height={1241}
-            className="absolute inset-0 h-full w-full object-cover"
+            width={400}
+            height={267}
+            className="h-auto w-full max-w-[400px] object-contain"
           />
         </div>
       </main>
