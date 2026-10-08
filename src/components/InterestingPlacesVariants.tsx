@@ -144,7 +144,7 @@ function Spotlight({ places, copy }: { places: InterestingPlace[]; copy: PlacesP
                 onClick={() => setSelected(place.slug)}
                 className={`flex items-center gap-3 rounded-xl border p-2 text-left transition ${
                   isActive
-                    ? "border-stone-900 bg-stone-900 text-stone-50"
+                    ? "border-blue-900 bg-blue-900 text-stone-50"
                     : "border-stone-200 bg-stone-50 hover:bg-stone-100"
                 }`}
               >
@@ -171,7 +171,7 @@ function Passport({ places, copy }: { places: InterestingPlace[]; copy: PlacesPa
           type="button"
           onClick={() => setActiveCategory("all")}
           className={`rounded-full border px-3 py-1.5 text-sm ${
-            activeCategory === "all" ? "border-stone-900 bg-stone-900 text-stone-50" : "border-stone-300 bg-white"
+            activeCategory === "all" ? "border-blue-900 bg-blue-900 text-stone-50" : "border-stone-300 bg-white"
           }`}
         >
           {copy.categoryAll}
@@ -182,7 +182,7 @@ function Passport({ places, copy }: { places: InterestingPlace[]; copy: PlacesPa
             type="button"
             onClick={() => setActiveCategory(category)}
             className={`rounded-full border px-3 py-1.5 text-sm capitalize ${
-              activeCategory === category ? "border-stone-900 bg-stone-900 text-stone-50" : "border-stone-300 bg-white"
+              activeCategory === category ? "border-blue-900 bg-blue-900 text-stone-50" : "border-stone-300 bg-white"
             }`}
           >
             {category}

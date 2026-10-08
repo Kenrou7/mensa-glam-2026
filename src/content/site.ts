@@ -76,7 +76,7 @@ export const siteContent: Record<Locale, SiteContent> = {
         {
           day: "Sábado",
           sessions: [
-            { time: "09:00", speaker: "Julio Cesar Filho" },
+            { time: "09:00", speaker: "Irapoan Nogueira Filho Alford" },
             { time: "10:15", speaker: "Alejandra Gavigán" },
             { time: "11:30", speaker: "Marina Couto" },
           ],
@@ -305,7 +305,7 @@ export const siteContent: Record<Locale, SiteContent> = {
         {
           day: "Sábado",
           sessions: [
-            { time: "09:00", speaker: "Julio Cesar Filho" },
+            { time: "09:00", speaker: "Irapoan Nogueira Filho Alford" },
             { time: "10:15", speaker: "Alejandra Gavigán" },
             { time: "11:30", speaker: "Marina Couto" },
           ],
@@ -534,7 +534,7 @@ export const siteContent: Record<Locale, SiteContent> = {
         {
           day: "Saturday",
           sessions: [
-            { time: "09:00", speaker: "Julio Cesar Filho" },
+            { time: "09:00", speaker: "Irapoan Nogueira Filho Alford" },
             { time: "10:15", speaker: "Alejandra Gavigán" },
             { time: "11:30", speaker: "Marina Couto" },
           ],

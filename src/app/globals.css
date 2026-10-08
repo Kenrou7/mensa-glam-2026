@@ -489,8 +489,8 @@ body {
   --nav-border: color-mix(in oklab, #1e3a8a 18%, transparent);
   --chip-bg: color-mix(in oklab, #dbeafe 76%, #ffffff 24%);
   --chip-border: color-mix(in oklab, #1e3a8a 22%, transparent);
-  --chip-active-bg: #0f172a;
-  --chip-active-border: #0f172a;
+  --chip-active-bg: #1e3a8a;
+  --chip-active-border: #1e3a8a;
   --chip-active-text: #dbeafe;
   --button-primary-bg: #2563eb;
   --button-primary-text: #eff6ff;
@@ -529,8 +529,8 @@ body {
   --nav-border: color-mix(in oklab, #1e3a8a 18%, transparent);
   --chip-bg: color-mix(in oklab, #dbeafe 76%, #ffffff 24%);
   --chip-border: color-mix(in oklab, #1e3a8a 22%, transparent);
-  --chip-active-bg: #0f172a;
-  --chip-active-border: #0f172a;
+  --chip-active-bg: #1e3a8a;
+  --chip-active-border: #1e3a8a;
   --chip-active-text: #dbeafe;
   --button-primary-bg: #2563eb;
   --button-primary-text: #eff6ff;

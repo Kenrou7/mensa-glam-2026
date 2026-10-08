@@ -31,7 +31,7 @@ export function EventPageClient({ locale, content }: EventPageClientProps) {
           id="overview"
           className="event-section event-hero scroll-mt-28 rounded-3xl border border-[var(--panel-border)] bg-[var(--panel-bg)] p-8 shadow-sm"
         >
-          <div className="event-hero-grid grid items-center gap-6 lg:grid-cols-[1fr_267px]">
+          <div className="event-hero-grid grid items-center gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(320px,42%)]">
             <div>
               <p className="event-eyebrow text-sm font-semibold uppercase tracking-[0.2em] text-[var(--accent-strong)]">
                 {content.hero.eyebrow}
@@ -50,14 +50,14 @@ export function EventPageClient({ locale, content }: EventPageClientProps) {
                 <ActionButtons registrationLabel={content.hero.registration} comingSoonLabel={content.hero.comingSoon} />
               </div>
             </div>
-            <div className="hero-emblem relative mx-auto h-[267px] w-full max-w-[267px] overflow-hidden lg:relative lg:left-[-80px]">
+            <div className="hero-emblem relative mx-auto h-[267px] w-full max-w-[267px] overflow-hidden lg:my-[-1rem] lg:min-h-[360px] lg:max-w-none lg:self-stretch lg:translate-x-[-50px]">
               <BasePathImage
                 src="/logo_glam.png"
                 alt={content.nav.brand}
                 width={400}
                 height={267}
                 priority
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain lg:object-cover"
               />
             </div>
           </div>
@@ -212,28 +212,25 @@ export function EventPageClient({ locale, content }: EventPageClientProps) {
           id="thanks"
           className="event-section section-thanks scroll-mt-28 rounded-3xl border border-[var(--panel-border)] bg-[var(--panel-bg)] p-8 shadow-sm"
         >
-          <h2 className="section-heading font-serif text-3xl text-[var(--text-main)]">{content.thanks.title}</h2>
-          <p className="mt-2 text-[var(--text-soft)]">{content.thanks.subtitle}</p>
-          <div className="mt-6 grid gap-4 sm:grid-cols-3">
-            {["/globe.svg", "/next.svg", "/vercel.svg"].map((logo) => (
+          {/* <h2 className="section-heading font-serif text-3xl text-[var(--text-main)]">{content.thanks.title}</h2>
+          <p className="mt-2 text-[var(--text-soft)]">{content.thanks.subtitle}</p> */}
+          <div className="mt-6 grid gap-4 sm:grid-cols-2" style={{marginTop:0}}>
+            {["/logo_mensa_argentina.png", "/80years-logo.png"].map((logo) => (
               <div
                 key={logo}
-                className="event-card logo-card flex h-28 items-center justify-center rounded-2xl border border-[var(--panel-border)] bg-[var(--surface)]"
+                className="event-card logo-card flex h-56 items-center justify-center rounded-2xl border border-[var(--panel-border)] bg-[var(--surface)]"
               >
-                <BasePathImage src={logo} alt={content.thanks.logoAlt} width={96} height={30} />
+                <BasePathImage
+                  src={logo}
+                  alt={content.thanks.logoAlt}
+                  width={400}
+                  height={267}
+                  className="h-[200px] w-auto max-w-[90%] object-contain"
+                />
               </div>
             ))}
           </div>
         </section>
-        <div className="relative flex w-full justify-center py-8">
-          <BasePathImage
-            src="/80years-logo.png"
-            alt={content.hero.title}
-            width={400}
-            height={267}
-            className="h-auto w-full max-w-[400px] object-contain"
-          />
-        </div>
       </main>
     </div>
   );
