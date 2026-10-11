@@ -39,7 +39,7 @@ export function EventPageClient({ locale, content }: EventPageClientProps) {
               <h1 className="event-title font-serif text-5xl leading-tight text-[var(--text-main)]">
                 {content.hero.title}
               </h1>
-              <p className="mt-4 max-w-2xl text-lg text-[var(--text-soft)]">{content.hero.subtitle}</p>
+              <p className="mt-4 max-w-2xl text-lg font-bold text-[var(--text-soft)]">{content.hero.subtitle}</p>
               <div className="event-chip-row mt-5 flex flex-wrap gap-2 text-sm font-semibold text-[var(--text-soft)]">
                 <span className="event-chip rounded-full bg-[var(--chip-bg)] px-3 py-1">{content.hero.date}</span>
                 <span className="event-chip rounded-full bg-[var(--chip-active-bg)] px-3 py-1 text-[var(--chip-active-text)]">
@@ -87,7 +87,13 @@ export function EventPageClient({ locale, content }: EventPageClientProps) {
             ))}
           </div>
           <h2 className="section-heading mt-10 font-serif text-3xl text-[var(--text-main)]">{content.schedule.title}</h2>
-          <p className="mt-2 text-[var(--text-soft)]">{content.schedule.note}</p>
+          <div className="mt-2 space-y-4 text-[var(--text-soft)]">
+            <p>
+              <strong className="text-[var(--text-main)]">{content.schedule.note.heading}</strong>: {content.schedule.note.tagline}
+            </p>
+            <p>{content.schedule.note.description}</p>
+            <p className="text-sm">{content.schedule.note.disclaimer}</p>
+          </div>
           <div className="schedule-grid mt-6 grid gap-4 md:grid-cols-2">
             {content.schedule.days.map((day) => (
               <article
@@ -115,7 +121,10 @@ export function EventPageClient({ locale, content }: EventPageClientProps) {
           className="event-section section-speakers scroll-mt-28 rounded-3xl border border-[var(--panel-border)] bg-[var(--panel-bg)] p-8 shadow-sm"
         >
           <h2 className="section-heading font-serif text-3xl text-[var(--text-main)]">{content.speakers.title}</h2>
-          <p className="mt-2 text-[var(--text-soft)]">{content.speakers.subtitle}</p>
+          <div className="mt-2 space-y-4 text-[var(--text-soft)]">
+            <p className="font-semibold text-[var(--text-main)]">{content.speakers.subtitle.heading}</p>
+            <p>{content.speakers.subtitle.description}</p>
+          </div>
           <div className="speakers-grid mt-6 grid grid-cols-1 gap-4 lg:grid-cols-2">
             {content.speakers.items.map((speaker, index) => (
               <article

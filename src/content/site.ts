@@ -27,7 +27,7 @@ export const siteContent: Record<Locale, SiteContent> = {
       eyebrow: "Gathering of Latin American Mensas",
       title: "GLAM 2026",
       subtitle:
-        "Un encuentro social para compartir ideas, juegos, amistades y conversaciones memorables.",
+        "El punto de encuentro de Mensa en Latinoamérica.",
       date: "27 al 29 de noviembre de 2026",
       city: "Buenos Aires, Argentina",
       registration: "Formulario de inscripción",
@@ -36,7 +36,12 @@ export const siteContent: Record<Locale, SiteContent> = {
     },
     schedule: {
       title: "Charlas",
-      note: "Programa preliminar. Algunos horarios o disertantes pueden cambiar.",
+      note: {
+        heading: "Mensa Talks",
+        tagline: "Ideas que despiertan la mañana.",
+        description: "El espacio donde la curiosidad, el conocimiento y el debate marcan el ritmo para arrancar cada jornada de la GLAM.",
+        disclaimer: "*La nómina de disertantes, temas y horarios de las ponencias está sujeta a eventuales modificaciones por razones organizativas.",
+      },
       agendaTitle: "Agenda",
       agendaDays: [
         {
@@ -85,7 +90,10 @@ export const siteContent: Record<Locale, SiteContent> = {
     },
     speakers: {
       title: "Disertantes",
-      subtitle: "Algunos perfiles ya confirmados y espacio para próximos anuncios.",
+      subtitle: {
+        heading: "Talento latinoamericano con proyección global.",
+        description: "Nómina de oradores internacional integrada por socios de Mensa reconocidos en sus respectivos ámbitos. Mentes de Argentina, Brasil, Paraguay y la región toda reunidas para compartir proyectos, visiones e iniciativas clave, como el Centro de Voluntarios de Mensa Internacional.",
+      },
       pendingLabel: "Pendiente",
       items: [
         {
@@ -255,8 +263,7 @@ export const siteContent: Record<Locale, SiteContent> = {
     hero: {
       eyebrow: "Gathering of Latin American Mensas",
       title: "GLAM 2026",
-      subtitle:
-        "Um encontro social para compartilhar ideias, jogos, amizades e conversas memoráveis.",
+      subtitle: "O ponto de encontro da Mensa na América Latina.",
       date: "27 a 29 de novembro de 2026",
       city: "Buenos Aires, Argentina",
       registration: "Formulário de inscrição",
@@ -265,7 +272,12 @@ export const siteContent: Record<Locale, SiteContent> = {
     },
     schedule: {
       title: "Palestras",
-      note: "Programa preliminar. Alguns horários ou palestrantes podem mudar.",
+      note: {
+        heading: "Mensa Talks",
+        tagline: "Ideias que despertam a manhã.",
+        description: "O espaço onde a curiosidade, o conhecimento e o debate dão o ritmo para começar cada dia da GLAM.",
+        disclaimer: "*A lista de palestrantes, temas e horários das apresentações está sujeita a eventuais alterações por razões organizacionais.",
+      },
       agendaTitle: "Agenda",
       agendaDays: [
         {
@@ -314,7 +326,10 @@ export const siteContent: Record<Locale, SiteContent> = {
     },
     speakers: {
       title: "Palestrantes",
-      subtitle: "Alguns perfis confirmados e espaço para próximos anúncios.",
+      subtitle: {
+        heading: "Talento latino-americano com projeção global.",
+        description: "Uma lista internacional de palestrantes formada por membros da Mensa reconhecidos em suas respectivas áreas. Mentes da Argentina, do Brasil, do Paraguai e de toda a região reunidas para compartilhar projetos, visões e iniciativas importantes, como o Centro de Voluntários da Mensa Internacional.",
+      },
       pendingLabel: "Pendente",
       items: [
         {
@@ -484,8 +499,7 @@ export const siteContent: Record<Locale, SiteContent> = {
     hero: {
       eyebrow: "Gathering of Latin American Mensas",
       title: "GLAM 2026",
-      subtitle:
-        "A social gathering to share ideas, games, friendships, and memorable conversations.",
+      subtitle: "The meeting point for Mensa in Latin America.",
       date: "November 27-29, 2026",
       city: "Buenos Aires, Argentina",
       registration: "Sign-up form",
@@ -494,7 +508,12 @@ export const siteContent: Record<Locale, SiteContent> = {
     },
     schedule: {
       title: "Talks",
-      note: "Preliminary program. Some times or speakers may change.",
+      note: {
+        heading: "Mensa Talks",
+        tagline: "Ideas that awaken the morning.",
+        description: "A space where curiosity, knowledge, and debate set the pace for starting each day of GLAM.",
+        disclaimer: "*The speaker lineup, topics, and talk times are subject to change for organizational reasons.",
+      },
       agendaTitle: "Schedule",
       agendaDays: [
         {
@@ -543,7 +562,10 @@ export const siteContent: Record<Locale, SiteContent> = {
     },
     speakers: {
       title: "Speakers",
-      subtitle: "Some confirmed profiles and space reserved for upcoming announcements.",
+      subtitle: {
+        heading: "Latin American talent with a global outlook.",
+        description: "An international lineup of speakers made up of Mensa members recognized in their respective fields. Minds from Argentina, Brazil, Paraguay, and across the region come together to share projects, perspectives, and key initiatives, including the Mensa International Volunteer Center.",
+      },
       pendingLabel: "Pending",
       items: [
         {

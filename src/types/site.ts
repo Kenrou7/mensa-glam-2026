@@ -71,7 +71,12 @@ export interface SiteContent {
   };
   schedule: {
     title: string;
-    note: string;
+    note: {
+      heading: string;
+      tagline: string;
+      description: string;
+      disclaimer: string;
+    };
     days: DaySchedule[];
     agendaTitle: string;
     agendaDays: Array<{
@@ -84,7 +89,10 @@ export interface SiteContent {
   };
   speakers: {
     title: string;
-    subtitle: string;
+    subtitle: {
+      heading: string;
+      description: string;
+    };
     pendingLabel: string;
     items: SpeakerItem[];
   };
