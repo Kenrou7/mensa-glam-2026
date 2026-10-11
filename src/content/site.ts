@@ -24,8 +24,8 @@ export const siteContent: Record<Locale, SiteContent> = {
       ],
     },
     hero: {
-      eyebrow: "Evento regional de Mensa LATAM",
-      title: "Mensa GLAM 2026",
+      eyebrow: "Gathering of Latin American Mensas",
+      title: "GLAM 2026",
       subtitle:
         "Un encuentro social para compartir ideas, juegos, amistades y conversaciones memorables.",
       date: "27 al 29 de noviembre de 2026",
@@ -253,8 +253,8 @@ export const siteContent: Record<Locale, SiteContent> = {
       ],
     },
     hero: {
-      eyebrow: "Evento regional da Mensa LATAM",
-      title: "Mensa GLAM 2026",
+      eyebrow: "Gathering of Latin American Mensas",
+      title: "GLAM 2026",
       subtitle:
         "Um encontro social para compartilhar ideias, jogos, amizades e conversas memoráveis.",
       date: "27 a 29 de novembro de 2026",
@@ -482,8 +482,8 @@ export const siteContent: Record<Locale, SiteContent> = {
       ],
     },
     hero: {
-      eyebrow: "Mensa LATAM regional event",
-      title: "Mensa GLAM 2026",
+      eyebrow: "Gathering of Latin American Mensas",
+      title: "GLAM 2026",
       subtitle:
         "A social gathering to share ideas, games, friendships, and memorable conversations.",
       date: "November 27-29, 2026",
