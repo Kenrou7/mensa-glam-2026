@@ -117,6 +117,7 @@ export interface SiteContent {
   thanks: {
     title: string;
     subtitle: string;
+    acknowledgements: Array<{ title: string; description: string }>;
     logoAlt: string;
   };
   hotels: {

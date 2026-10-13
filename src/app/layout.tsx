@@ -16,7 +16,7 @@ const bodyFont = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Mensa GLAM 2026",
+  title: "GLAM 2026",
   description: "Mensa LATAM social event in Buenos Aires.",
 };
 

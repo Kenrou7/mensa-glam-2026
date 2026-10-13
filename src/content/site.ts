@@ -6,12 +6,12 @@ export const siteContent: Record<Locale, SiteContent> = {
   es: {
     localeName: "Español",
     meta: {
-      title: "Mensa GLAM 2026 | Buenos Aires",
+      title: "GLAM 2026 | Buenos Aires",
       description:
         "Encuentro social de Mensa LATAM en Buenos Aires del 27 al 29 de noviembre de 2026.",
     },
     nav: {
-      brand: "Mensa GLAM",
+      brand: "GLAM",
       languageLabel: "Idioma",
       sections: [
         { id: "overview", label: "Inicio" },
@@ -176,7 +176,7 @@ export const siteContent: Record<Locale, SiteContent> = {
       ratesLabel: "Valores con descuento",
       referenceNeededTitle: "Código de referencia requerido",
       referenceNeededDescription:
-        "Este hotel aplica la tarifa de Mensa GLAM solo con código. Te redirigimos en {seconds} {unit} en una nueva pestaña.",
+        "Este hotel aplica la tarifa de GLAM solo con código. Te redirigimos en {seconds} {unit} en una nueva pestaña.",
       referenceCodeLabel: "Referencia",
       autoRedirectLabel: "Redirección automática",
       secondsLabel: "segundos",
@@ -236,19 +236,26 @@ export const siteContent: Record<Locale, SiteContent> = {
     },
     thanks: {
       title: "Agradecimientos",
-      subtitle: "Próximamente sumaremos aquí logos de aliados y colaboradores.",
+      subtitle:
+        "La realización de la GLAM 2026 es el resultado del esfuerzo conjunto y la pasión de nuestra comunidad. Expresamos nuestro sincero reconocimiento a:",
+      acknowledgements: [
+        { title: "Comité Organizador y Voluntarios", description: "Por su dedicación desinteresada en la planificación y logística" },
+        { title: "Disertantes y Colaboradores", description: "Por compartir generosamente su tiempo, conocimiento y talento" },
+        { title: "Mensa Internacional y Mensas de la Región", description: "Por el constante acompañamiento institucional e integración" },
+        { title: "A todos los asistentes", description: "Por dar vida a este punto de encuentro regional" },
+      ],
       logoAlt: "Logo de aliado",
     },
   },
   pt: {
     localeName: "Português",
     meta: {
-      title: "Mensa GLAM 2026 | Buenos Aires",
+      title: "GLAM 2026 | Buenos Aires",
       description:
         "Encontro social da Mensa LATAM em Buenos Aires de 27 a 29 de novembro de 2026.",
     },
     nav: {
-      brand: "Mensa GLAM",
+      brand: "GLAM",
       languageLabel: "Idioma",
       sections: [
         { id: "overview", label: "Início" },
@@ -412,7 +419,7 @@ export const siteContent: Record<Locale, SiteContent> = {
       ratesLabel: "Tarifas com desconto",
       referenceNeededTitle: "Código de referência obrigatório",
       referenceNeededDescription:
-        "Este hotel aplica a tarifa Mensa GLAM somente com código. Vamos redirecionar em {seconds} {unit} em uma nova aba.",
+        "Este hotel aplica a tarifa GLAM somente com código. Vamos redirecionar em {seconds} {unit} em uma nova aba.",
       referenceCodeLabel: "Referência",
       autoRedirectLabel: "Redirecionamento automático",
       secondsLabel: "segundos",
@@ -472,19 +479,26 @@ export const siteContent: Record<Locale, SiteContent> = {
     },
     thanks: {
       title: "Agradecimentos",
-      subtitle: "Em breve adicionaremos aqui logos de parceiros e colaboradores.",
+      subtitle:
+        "A realização do GLAM 2026 é resultado do esforço conjunto e da paixão da nossa comunidade. Expressamos nosso sincero reconhecimento a:",
+      acknowledgements: [
+        { title: "Comitê Organizador e Voluntários", description: "Por sua dedicação voluntária ao planejamento e à logística" },
+        { title: "Palestrantes e Colaboradores", description: "Por compartilharem generosamente seu tempo, conhecimento e talento" },
+        { title: "Mensa Internacional e Mensas da Região", description: "Pelo constante apoio institucional e pela integração" },
+        { title: "A todos os participantes", description: "Por darem vida a este ponto de encontro regional" },
+      ],
       logoAlt: "Logo de parceiro",
     },
   },
   en: {
     localeName: "English",
     meta: {
-      title: "Mensa GLAM 2026 | Buenos Aires",
+      title: "GLAM 2026 | Buenos Aires",
       description:
         "Mensa LATAM social gathering in Buenos Aires, November 27-29, 2026.",
     },
     nav: {
-      brand: "Mensa GLAM",
+      brand: "GLAM",
       languageLabel: "Language",
       sections: [
         { id: "overview", label: "Home" },
@@ -648,7 +662,7 @@ export const siteContent: Record<Locale, SiteContent> = {
       ratesLabel: "Discounted rates",
       referenceNeededTitle: "Reference code required",
       referenceNeededDescription:
-        "This hotel applies the Mensa GLAM rate only with a code. We will redirect you in {seconds} {unit} in a new tab.",
+        "This hotel applies the GLAM rate only with a code. We will redirect you in {seconds} {unit} in a new tab.",
       referenceCodeLabel: "Reference",
       autoRedirectLabel: "Automatic redirect",
       secondsLabel: "seconds",
@@ -708,7 +722,14 @@ export const siteContent: Record<Locale, SiteContent> = {
     },
     thanks: {
       title: "Thanks",
-      subtitle: "Partner and supporter logos will be added here soon.",
+      subtitle:
+        "GLAM 2026 is the result of our community’s shared effort and passion. We would like to express our sincere gratitude to:",
+      acknowledgements: [
+        { title: "Organizing Committee and Volunteers", description: "For their selfless dedication to planning and logistics" },
+        { title: "Speakers and Collaborators", description: "For generously sharing their time, knowledge, and talent" },
+        { title: "Mensa International and Mensa groups across the region", description: "For their ongoing institutional support and regional connection" },
+        { title: "All attendees", description: "For bringing this regional meeting point to life" },
+      ],
       logoAlt: "Partner logo",
     },
   },

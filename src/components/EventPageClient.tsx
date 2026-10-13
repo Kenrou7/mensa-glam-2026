@@ -221,8 +221,19 @@ export function EventPageClient({ locale, content }: EventPageClientProps) {
           id="thanks"
           className="event-section section-thanks scroll-mt-28 rounded-3xl border border-[var(--panel-border)] bg-[var(--panel-bg)] p-8 shadow-sm"
         >
-          {/* <h2 className="section-heading font-serif text-3xl text-[var(--text-main)]">{content.thanks.title}</h2>
-          <p className="mt-2 text-[var(--text-soft)]">{content.thanks.subtitle}</p> */}
+          <h2 className="section-heading font-serif text-3xl text-[var(--text-main)]">{content.thanks.title}</h2>
+          <p className="mt-2 text-left text-[var(--text-soft)]">{content.thanks.subtitle}</p>
+          <ul className="mt-6 space-y-5 pb-8 text-left">
+            {content.thanks.acknowledgements.map((item) => (
+              <li key={item.title}>
+                <p className="text-xl font-bold text-[var(--text-main)]">
+                  <span className="mr-2 text-amber-600" aria-hidden="true">•</span>
+                  {item.title}
+                </p>
+                <p className="mt-1 text-[var(--text-soft)]">{item.description}</p>
+              </li>
+            ))}
+          </ul>
           <div className="mt-6 grid gap-4 sm:grid-cols-2" style={{marginTop:0}}>
             {["/logo_mensa_argentina.png", "/80years-logo.png"].map((logo) => (
               <div
